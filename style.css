@@ -1,0 +1,184 @@
+body {
+  /*margin-left: 10px;
+    margin-right: 10px;*/
+  /*background-image: linear-gradient(180deg, #1A5BA9, #669DC4);*/
+  background-image: url("/w.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* font-family: Work Sans, sans-serif;**/
+}
+.headline {
+  padding-top: 35px;
+  padding-bottom: 10px;
+  padding-right: 450px;
+  padding-left: 500px;
+  text-align: left;
+  font-size: 25px;
+  color: #ecece8;
+}
+.all {
+  display: flex;
+  justify-content: space-between;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 600px;
+  color: #f5ea55;
+  justify-content: left;
+  gap: 7em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  /*min-height:100vh;*/
+}
+.holderZip {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*entry box*/
+
+.entry {
+  flex-grow: 1;
+  background-color: rgb(21, 44, 68, 0.5);
+  border-radius: 10px;
+  font-family: Quicksand;
+}
+.title {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  color: #f3ea6f;
+}
+#entryHolder{
+    text-align: center;
+    margin-top: 300px;
+    color: aliceblue;
+    font-size: 30px;
+
+}
+/*  Basic Styling To Override Default For Basic HTML Elements */
+/* title above boxs*/
+label {
+  font-family: Work Sans, sans-serif;
+  display: block;
+  justify-content: center;
+  font-size: 25px;
+}
+
+/*zipcode box*/
+input {
+  display: inline;
+  height: 60px;
+  width: 320px;
+  background: #22b2da;
+
+  opacity: 0.7;
+  font-size: 20px;
+  font-family: Quicksand;
+  padding-bottom: 5px;
+  border: none;
+}
+
+button {
+  width: 200px;
+  height: 70px;
+  background: #3b4a6b;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
+}
+#generate:hover {
+  opacity: 0.7;
+  background-color: #9093aa;
+  color: rgb(0, 0, 0);
+  transition: ease-in-out 0.5s;
+}
+
+h1 {
+  font-size: 36px;
+}
+/*how u feelin box*/
+textarea {
+  display: inline;
+  background: #22b2da;
+  opacity: 0.6;
+  font-size: 20px;
+  font-family: Quicksand;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Style for Placeholder(box)=>Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #f1f1f0;
+  font-family: Quicksand;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f1f1f0;
+  font-family: Quicksand;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f1f1f0;
+  font-family: Quicksand;
+}
+
+/*resp*/
+@media (max-width: 750px) {
+  .headline {
+    display: inline;
+    text-align: center;
+  }
+  #app {
+    width: 200px;
+    gap: 0.5em;
+  }
+  button {
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+  }
+  .entry {
+    height: 50vh;
+    margin-top: 570px;
+  }
+}
+@media (min-width: 750px) and (max-width : 992px) {
+  .headline {
+    display: inline;
+    text-align: center;
+  }
+  #app {
+    width: 140px;
+    gap: 0.5em;
+    margin-left: 100px;
+  }
+  button {
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+    margin-left: 500px;
+  }
+  .entry {
+    height: 50vh;
+    margin-top: 630px;
+    margin-right: 200px;
+  }
+}
